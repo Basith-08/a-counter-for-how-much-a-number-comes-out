@@ -1,26 +1,20 @@
 function ambilDataOption() {
-  // Dapatkan elemen select berdasarkan ID
   const selectElement = document.getElementById("mySelect");
-
   const inputNumbers = document.getElementById("myNumbers");
-
-  // Dapatkan nilai option yang dipilih
   const selectedOptionValue = parseInt(selectElement.value);
   const selectedInputNumbersValue = parseInt(inputNumbers.value);
 
+  const result = countTwosInRange(
+    selectedInputNumbersValue,
+    selectedOptionValue
+  );
 
-  countTwosInRange(selectedInputNumbersValue, selectedOptionValue);
-  
-  const result = countTwosInRange(selectedInputNumbersValue, selectedOptionValue);
-  // Tampilkan hasilnya
-  const hasilElement = document.getElementById("hasil");
-  hasilElement.innerHTML = `<div class="alert alert-secondary alert-dismissible fade show" role="alert">
-                              Jumlah angka ${selectedOptionValue} dalam bilangan dari 1 hingga ${selectedInputNumbersValue} adalah ${result}
-                              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>`
-
+  // Pengecekan form
+  if (!selectedOptionValue && !selectedInputNumbersValue){ throw chech("Silahkan isi form")}
+  if (!selectedOptionValue){ throw chech("Silahkan pilih angka");}
+  if (!selectedInputNumbersValue){ throw chech("Silahkan masukakn bilangan");}
+  if (selectedOptionValue && selectedInputNumbersValue){ throw chech(`Jumlah angka ${selectedOptionValue} dalam bilangan dari 1 hingga ${selectedInputNumbersValue} adalah ${result}`)}
 }
-
 
 // fungsi mancri angka
 function countTwosInRange(numbers, number) {
@@ -36,3 +30,11 @@ function countTwosInRange(numbers, number) {
   return count;
 }
 
+function chek(text) {
+  const hasilElement = document.getElementById("hasil");
+
+  hasilElement.innerHTML = `<div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                ${text}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              </div>`;
+}

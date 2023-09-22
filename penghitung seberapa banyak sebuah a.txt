@@ -1,0 +1,36 @@
+penghitung seberapa banyak sebuah angka keluar
+
+
+
+aplikasi ini terinspirasi dari video tiktok yang bertanya ada berapa angka 7 dari 1 sampai 100, nah divideo itu ga ada yang bisa jawab dan saya yang nonton pun ga bisa jawab, jadi saya selesaikan dengan membuat program ini
+
+=================================
+salam
+
+Haii, saya As Fine Basith Maryono
+
+bisa dipanggil Basith
+
+dari prodi Informatika
+
+dividoe ini saya akan mempresentarsikan karya yang berjudul "penghitung seberapa banyak sebuah angka keluar" 
+
+maksudnya apa sih?
+
+contohnya pertanyaan ini misal ada berapa angka 7 dari 1 sampai 100 ?
+
+
+
+
+
+[Karya MABA ITTS 2023]
+
+Salam Teknologi,
+Perkenalkan sama saya As Fine Basith Maryono
+dari prodi Informatika, Institut Teknologi Tangerang Selatan,
+dengan karya yang berjudul Penghitung Berapa Banyak Sebuah Angka
+
+Aplikasi ini terinspirasi dari video tiktok yang bertanya ada berapa angka 7 dari 1 sampai 100, nah divideo itu ga ada yang bisa jawab dan saya yang nonton pun ga bisa jawab, jadi saya selesaikan dengan membuat program ini.
+Karya ini saya buat dalam 1 hari, saya memulai dengan mengetik ide dan gambaran kasar bagaimana aplikasi ini berjalan diNotepad, lalu saya lanjut dengan menggunakan VS Code untuk membuat fungsi programnya terlebih dahulu dengan JavaScript, setelah fungsinya selesai baru saya membuat UI dengan bantuan Bootstrap. Saya memilih karya ini karena untuk menjawab pertanyaan yang divideo tiktok tersebut
+
+#itts#pkkmbitts2023
