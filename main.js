@@ -10,10 +10,10 @@ function ambilDataOption() {
   );
 
   // Pengecekan form
-  if (!selectedOptionValue && !selectedInputNumbersValue){ throw chech("Silahkan isi form")}
-  if (!selectedOptionValue){ throw chech("Silahkan pilih angka");}
-  if (!selectedInputNumbersValue){ throw chech("Silahkan masukakn bilangan");}
-  if (selectedOptionValue && selectedInputNumbersValue){ throw chech(`Jumlah angka ${selectedOptionValue} dalam bilangan dari 1 hingga ${selectedInputNumbersValue} adalah ${result}`)}
+  if (!selectedOptionValue && !selectedInputNumbersValue){ throw cek("Silahkan isi form")}
+  if (!selectedOptionValue){ throw cek("Silahkan pilih angka");}
+  if (!selectedInputNumbersValue){ throw cek("Silahkan masukakn bilangan");}
+  if (selectedOptionValue && selectedInputNumbersValue){ throw cek(`Jumlah angka ${selectedOptionValue} dalam bilangan dari 1 hingga ${selectedInputNumbersValue} adalah ${result}`)}
 }
 
 // fungsi mancri angka
@@ -30,7 +30,7 @@ function countTwosInRange(numbers, number) {
   return count;
 }
 
-function chek(text) {
+function cek(text) {
   const hasilElement = document.getElementById("hasil");
 
   hasilElement.innerHTML = `<div class="alert alert-secondary alert-dismissible fade show" role="alert">
